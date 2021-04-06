@@ -1,8 +1,13 @@
 # Yasutomo Kawanishi, Ph.D.
 
-Assistant Professor at Graduate School of Informatics, Nagoya University
 
-mail: kawanishi (at) i.nagoya-u.ac.jp
+Team Leader
+Multimodal data recognition Research Team
+Guardian Robot Project
+RIKEN Information R&D and Strategy Headquarters
+
+
+mail: yasutomo.kawanishi (at) riken.jp
 
 ## Research Interest
 
