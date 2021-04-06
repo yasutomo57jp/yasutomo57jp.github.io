@@ -9,6 +9,8 @@ RIKEN Information R&D and Strategy Headquarters
 
 mail: yasutomo.kawanishi (at) riken.jp
 
+This page is under construction.
+
 ## Research Interest
 
 - Multiple people tracking across cameras
