@@ -1,18 +1,28 @@
-# Yasutomo Kawanishi, Ph.D.
+# 川西康友
 
-```
-Team Leader
-Multimodal data recognition Research Team
-Guardian Robot Project
-RIKEN Information R&D and Strategy Headquarters
-```
+## 所属
+
+
+国立研究開発法人理化学研究所  
+情報統合本部ガーディアンロボットプロジェクト  
+感覚データ認識研究チーム  
+チームリーダー
+
+## オフィス
+
+〒619-0288 京都府相楽郡精華町光台光台2-2-2（けいはんな学研都市）  
+株式会社国際電気通信基礎技術研究所内3階
+
+## 電話
+
+0774-95-1361
+
+## E-mail
 
 mail: yasutomo.kawanishi (at) riken.jp
 
-This page is under construction.
 
-## Research Interest
+## 最近の活動
 
-- Multiple people tracking across cameras
-- Action/activity/attribute recognition
-- Object pose estimation
+理化学研究所に異動しました
+
