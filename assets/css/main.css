@@ -2563,11 +2563,13 @@ input, select, textarea {
 	.research-card {
 		background: #ffffff;
 		border-radius: 12px;
-		padding: 0;
+		padding: 2.5em;
 		margin-bottom: 2em;
 		box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
 		transition: box-shadow 0.3s ease, transform 0.3s ease;
 		overflow: hidden;
+		display: flex;
+		gap: 2em;
 	}
 
 	.research-card:hover {
@@ -2576,10 +2578,13 @@ input, select, textarea {
 	}
 
 	.research-card .research-image {
-		width: 100%;
-		height: 240px;
+		width: 30%;
+		min-width: 250px;
+		flex-shrink: 0;
 		overflow: hidden;
 		background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+		border-radius: 8px;
+		align-self: flex-start;
 	}
 
 	.research-card .research-image img {
@@ -2594,7 +2599,8 @@ input, select, textarea {
 	}
 
 	.research-card .research-content {
-		padding: 2.5em;
+		flex: 1;
+		padding: 0;
 	}
 
 	.research-card .research-content h3 {
@@ -2628,6 +2634,18 @@ input, select, textarea {
 		color: #64748b;
 		font-size: 0.95em;
 		line-height: 1.6em;
+	}
+
+	@media screen and (max-width: 980px) {
+		.research-card {
+			flex-direction: column;
+		}
+
+		.research-card .research-image {
+			width: 100%;
+			min-width: auto;
+			height: 240px;
+		}
 	}
 
 /* Header */
