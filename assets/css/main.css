@@ -2585,10 +2585,10 @@ input, select, textarea {
 		width: 30%;
 		min-width: 250px;
 		flex-shrink: 0;
-		overflow: hidden;
 		background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
 		border-radius: 8px;
 		align-self: flex-start;
+		padding: 1em;
 	}
 
 	.research-card .research-image img {
