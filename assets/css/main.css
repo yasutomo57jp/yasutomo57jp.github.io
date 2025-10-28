@@ -3757,3 +3757,22 @@ input, select, textarea {
 	}
 }
 
+
+/* Publication page specific styles */
+.publication-item,
+.publication-item * {
+	color: #000 !important;
+}
+
+.publication-item a {
+	color: #007bff !important;
+}
+
+.publication-item mark {
+	background-color: #ffeb3b;
+	color: #000 !important;
+}
+
+ol li {
+	color: #000 !important;
+}
