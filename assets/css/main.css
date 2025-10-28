@@ -3523,7 +3523,7 @@ input, select, textarea {
 	transition: all 0.3s ease;
 	counter-increment: pub-counter;
 	position: relative;
-	padding-left: 3em;
+	padding-left: 4.5em;
 }
 
 .publication-item:hover {
@@ -3703,6 +3703,8 @@ input, select, textarea {
 	top: 0.6em;
 	opacity: 0.8;
 	font-weight: 600;
+	min-width: 3em;
+	display: inline-block;
 }
 
 .publication-item[data-type="inproceedings"]::before {
@@ -3712,6 +3714,8 @@ input, select, textarea {
 	top: 0.6em;
 	opacity: 0.8;
 	font-weight: 600;
+	min-width: 3em;
+	display: inline-block;
 }
 
 .publication-item[data-type="book"]::before {
@@ -3721,6 +3725,8 @@ input, select, textarea {
 	top: 0.6em;
 	opacity: 0.8;
 	font-weight: 600;
+	min-width: 3em;
+	display: inline-block;
 }
 
 .publication-item[data-type="talk"]::before {
@@ -3730,6 +3736,8 @@ input, select, textarea {
 	top: 0.6em;
 	opacity: 0.8;
 	font-weight: 600;
+	min-width: 3em;
+	display: inline-block;
 }
 
 .publication-item[data-type="patent"]::before {
@@ -3739,6 +3747,8 @@ input, select, textarea {
 	top: 0.6em;
 	opacity: 0.8;
 	font-weight: 600;
+	min-width: 3em;
+	display: inline-block;
 }
 
 .publication-item[data-type="misc"]::before {
@@ -3748,13 +3758,15 @@ input, select, textarea {
 	top: 0.6em;
 	opacity: 0.8;
 	font-weight: 600;
+	min-width: 3em;
+	display: inline-block;
 }
 
 /* Responsive Design */
 @media screen and (max-width: 980px) {
 	.publication-item {
 		padding: 0.7em;
-		padding-left: 3em;
+		padding-left: 4.5em;
 		margin-bottom: 1em;
 	}
 
@@ -3772,7 +3784,7 @@ input, select, textarea {
 @media screen and (max-width: 736px) {
 	.publication-item {
 		padding: 0.6em;
-		padding-left: 3em;
+		padding-left: 4.5em;
 		margin-bottom: 0.8em;
 	}
 
