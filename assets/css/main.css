@@ -3507,12 +3507,12 @@ input, select, textarea {
 
 /* Individual Publication Item */
 .publication-item {
-	margin-bottom: 1em;
-	padding: 0.8em;
+	margin-bottom: 0.7em;
+	padding: 0.6em;
 	background: rgba(255, 255, 255, 0.03);
 	border-left: 3px solid rgba(255, 255, 255, 0.15);
 	border-radius: 4px;
-	line-height: 1.5;
+	line-height: 1.4;
 	transition: all 0.3s ease;
 }
 
@@ -3526,7 +3526,7 @@ input, select, textarea {
 .pub-authors {
 	font-size: 0.95em;
 	color: rgba(255, 255, 255, 0.8);
-	margin-bottom: 0.3em;
+	margin-bottom: 0.2em;
 }
 
 .pub-authors mark {
@@ -3542,7 +3542,7 @@ input, select, textarea {
 	font-size: 1.05em;
 	font-weight: 600;
 	color: rgba(255, 255, 255, 0.95);
-	margin-bottom: 0.4em;
+	margin-bottom: 0.25em;
 	line-height: 1.4;
 }
 
@@ -3550,7 +3550,7 @@ input, select, textarea {
 .pub-venue {
 	font-size: 0.9em;
 	color: rgba(255, 255, 255, 0.7);
-	margin-bottom: 0.4em;
+	margin-bottom: 0.3em;
 	font-style: italic;
 }
 
@@ -3577,18 +3577,19 @@ input, select, textarea {
 
 /* Metadata Section */
 .pub-metadata {
-	font-size: 0.88em;
+	font-size: 0.82em;
 	color: rgba(255, 255, 255, 0.65);
 	display: flex;
 	flex-wrap: wrap;
-	gap: 0.5em;
+	gap: 0.35em;
 	align-items: center;
+	line-height: 1.4;
 }
 
 /* Links */
 .pub-link {
 	display: inline-block;
-	padding: 0.25em 0.6em;
+	padding: 0.15em 0.45em;
 	background: rgba(74, 202, 168, 0.15);
 	color: #4acaa8;
 	text-decoration: none;
@@ -3596,6 +3597,7 @@ input, select, textarea {
 	font-weight: 500;
 	transition: all 0.2s ease;
 	border: 1px solid rgba(74, 202, 168, 0.3);
+	font-size: 0.95em;
 }
 
 .pub-link:hover {
@@ -3639,12 +3641,13 @@ input, select, textarea {
 
 /* Status and Notes */
 .pub-status {
-	padding: 0.25em 0.6em;
+	padding: 0.15em 0.45em;
 	background: rgba(241, 196, 15, 0.15);
 	color: #f1c40f;
 	border-radius: 3px;
 	font-weight: 500;
 	border: 1px solid rgba(241, 196, 15, 0.3);
+	font-size: 0.95em;
 }
 
 .pub-note {
@@ -3658,12 +3661,13 @@ input, select, textarea {
 
 /* Impact Factor */
 .pub-if {
-	padding: 0.25em 0.6em;
+	padding: 0.15em 0.45em;
 	background: rgba(46, 204, 113, 0.15);
 	color: #2ecc71;
 	border-radius: 3px;
 	font-weight: 500;
 	border: 1px solid rgba(46, 204, 113, 0.3);
+	font-size: 0.95em;
 }
 
 /* Patent Content */
