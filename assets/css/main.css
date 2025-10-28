@@ -3494,3 +3494,266 @@ input, select, textarea {
 			}
 
 	}
+
+/* ===================================================================
+   Publications Section Styles
+   =================================================================== */
+
+/* Publication List Container */
+#content ol {
+	padding-left: 2em;
+	margin-bottom: 2em;
+}
+
+/* Individual Publication Item */
+.publication-item {
+	margin-bottom: 2em;
+	padding: 1.2em;
+	background: rgba(255, 255, 255, 0.03);
+	border-left: 3px solid rgba(255, 255, 255, 0.15);
+	border-radius: 4px;
+	line-height: 1.8;
+	transition: all 0.3s ease;
+}
+
+.publication-item:hover {
+	background: rgba(255, 255, 255, 0.05);
+	border-left-color: #4acaa8;
+	transform: translateX(3px);
+}
+
+/* Author Names */
+.pub-authors {
+	font-size: 0.95em;
+	color: rgba(255, 255, 255, 0.8);
+	margin-bottom: 0.5em;
+}
+
+.pub-authors mark {
+	background-color: rgba(74, 202, 168, 0.2);
+	color: #4acaa8;
+	font-weight: 600;
+	padding: 0.1em 0.3em;
+	border-radius: 3px;
+}
+
+/* Title */
+.pub-title {
+	font-size: 1.05em;
+	font-weight: 600;
+	color: rgba(255, 255, 255, 0.95);
+	margin-bottom: 0.6em;
+	line-height: 1.6;
+}
+
+/* Venue Information */
+.pub-venue {
+	font-size: 0.9em;
+	color: rgba(255, 255, 255, 0.7);
+	margin-bottom: 0.6em;
+	font-style: italic;
+}
+
+.venue-name {
+	font-weight: 500;
+	color: rgba(255, 255, 255, 0.85);
+}
+
+.pub-volume,
+.pub-number,
+.pub-pages,
+.pub-article-number,
+.pub-year,
+.pub-month,
+.pub-day {
+	font-style: normal;
+}
+
+.pub-isbn,
+.pub-issn {
+	font-size: 0.85em;
+	opacity: 0.7;
+}
+
+/* Metadata Section */
+.pub-metadata {
+	font-size: 0.88em;
+	color: rgba(255, 255, 255, 0.65);
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.8em;
+	align-items: center;
+}
+
+/* Links */
+.pub-link {
+	display: inline-block;
+	padding: 0.25em 0.6em;
+	background: rgba(74, 202, 168, 0.15);
+	color: #4acaa8;
+	text-decoration: none;
+	border-radius: 3px;
+	font-weight: 500;
+	transition: all 0.2s ease;
+	border: 1px solid rgba(74, 202, 168, 0.3);
+}
+
+.pub-link:hover {
+	background: rgba(74, 202, 168, 0.25);
+	border-color: #4acaa8;
+	transform: translateY(-1px);
+}
+
+.pub-link[data-link-type="doi"] {
+	background: rgba(52, 152, 219, 0.15);
+	color: #3498db;
+	border-color: rgba(52, 152, 219, 0.3);
+}
+
+.pub-link[data-link-type="doi"]:hover {
+	background: rgba(52, 152, 219, 0.25);
+	border-color: #3498db;
+}
+
+.pub-link[data-link-type="code"] {
+	background: rgba(155, 89, 182, 0.15);
+	color: #9b59b6;
+	border-color: rgba(155, 89, 182, 0.3);
+}
+
+.pub-link[data-link-type="code"]:hover {
+	background: rgba(155, 89, 182, 0.25);
+	border-color: #9b59b6;
+}
+
+.pub-link[data-link-type="openaccess"] {
+	background: rgba(230, 126, 34, 0.15);
+	color: #e67e22;
+	border-color: rgba(230, 126, 34, 0.3);
+}
+
+.pub-link[data-link-type="openaccess"]:hover {
+	background: rgba(230, 126, 34, 0.25);
+	border-color: #e67e22;
+}
+
+/* Status and Notes */
+.pub-status {
+	padding: 0.25em 0.6em;
+	background: rgba(241, 196, 15, 0.15);
+	color: #f1c40f;
+	border-radius: 3px;
+	font-weight: 500;
+	border: 1px solid rgba(241, 196, 15, 0.3);
+}
+
+.pub-note {
+	padding: 0.25em 0.6em;
+	background: rgba(231, 76, 60, 0.15);
+	color: #e74c3c;
+	border-radius: 3px;
+	font-weight: 600;
+	border: 1px solid rgba(231, 76, 60, 0.3);
+}
+
+/* Impact Factor */
+.pub-if {
+	padding: 0.25em 0.6em;
+	background: rgba(46, 204, 113, 0.15);
+	color: #2ecc71;
+	border-radius: 3px;
+	font-weight: 500;
+	border: 1px solid rgba(46, 204, 113, 0.3);
+}
+
+/* Patent Content */
+.pub-content {
+	font-size: 0.92em;
+	color: rgba(255, 255, 255, 0.8);
+	line-height: 1.7;
+}
+
+.pub-content mark {
+	background-color: rgba(74, 202, 168, 0.2);
+	color: #4acaa8;
+	font-weight: 600;
+	padding: 0.1em 0.3em;
+	border-radius: 3px;
+}
+
+/* Publication Type Indicators */
+.publication-item[data-type="article"]::before {
+	content: "📄";
+	margin-right: 0.5em;
+	opacity: 0.6;
+}
+
+.publication-item[data-type="inproceedings"]::before {
+	content: "🎤";
+	margin-right: 0.5em;
+	opacity: 0.6;
+}
+
+.publication-item[data-type="book"]::before {
+	content: "📚";
+	margin-right: 0.5em;
+	opacity: 0.6;
+}
+
+.publication-item[data-type="talk"]::before {
+	content: "🎯";
+	margin-right: 0.5em;
+	opacity: 0.6;
+}
+
+.publication-item[data-type="patent"]::before {
+	content: "⚖️";
+	margin-right: 0.5em;
+	opacity: 0.6;
+}
+
+.publication-item[data-type="misc"]::before {
+	content: "📝";
+	margin-right: 0.5em;
+	opacity: 0.6;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 980px) {
+	.publication-item {
+		padding: 1em;
+		margin-bottom: 1.5em;
+	}
+	
+	.pub-title {
+		font-size: 1em;
+	}
+	
+	.pub-metadata {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 0.5em;
+	}
+}
+
+@media screen and (max-width: 736px) {
+	.publication-item {
+		padding: 0.8em;
+		margin-bottom: 1.2em;
+	}
+	
+	#content ol {
+		padding-left: 1.5em;
+	}
+	
+	.pub-authors,
+	.pub-title,
+	.pub-venue {
+		font-size: 0.9em;
+	}
+	
+	.publication-item[data-type]::before {
+		display: none;
+	}
+}
+
