@@ -3579,6 +3579,11 @@ input, select, textarea {
 	font-style: normal;
 }
 
+.pub-month::before,
+.pub-day::before {
+	content: "/";
+}
+
 .pub-isbn,
 .pub-issn {
 	font-size: 0.85em;
