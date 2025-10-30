@@ -3540,7 +3540,7 @@ input, select, textarea {
 }
 
 .pub-authors mark {
-	background-color: rgba(74, 202, 168, 0.8);
+	background-color: rgba(74, 202, 168, 0.2);
 	color: #4acaa8;
 	font-weight: 600;
 	padding: 0.1em 0.3em;
@@ -3816,7 +3816,7 @@ input, select, textarea {
 }
 
 .publication-item mark {
-	background-color: #ffeb3b;
+	background-color: #e5faa5;
 	color: #000 !important;
 }
 
