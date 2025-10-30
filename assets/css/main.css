@@ -3540,7 +3540,7 @@ input, select, textarea {
 }
 
 .pub-authors mark {
-	background-color: rgba(74, 202, 168, 0.2);
+	background-color: rgba(74, 202, 168, 0.8);
 	color: #4acaa8;
 	font-weight: 600;
 	padding: 0.1em 0.3em;
