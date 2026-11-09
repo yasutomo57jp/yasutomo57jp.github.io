@@ -1,258 +1,286 @@
-<!DOCTYPE HTML>
-<!--
-	Arcana by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-  <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9b2LQHRPPE"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9B2LQHRPPE"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-      gtag('config', 'G-9b2LQHRPPE');
-    </script>
-    <title>Yasutomo KAWANISHI - research (en)</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="https://yasutomo57jp.github.io/assets/css/main.css" />
-  </head>
-  <body class="is-preload">
-    <div id="page-wrapper">
+    gtag('config', 'G-9B2LQHRPPE');
+  </script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Research | Yasutomo Kawanishi</title>
+  <meta name="description" content="Research topics of Yasutomo Kawanishi (open-world recognition, scene graph generation, multimodal recognition, and more)">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&amp;display=swap">
+  <link rel="stylesheet" href="../assets/css/dads-tokens.css">
+  <link rel="stylesheet" href="../assets/css/site.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="../assets/js/site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
 
-      <!-- Header -->
-      <div id="header">
+  <div class="layout">
+    <header class="sidebar">
+      <div class="sidebar-top">
+        <img class="sidebar-photo" src="../images/face.jpg" alt="Photo of Yasutomo Kawanishi" width="160" height="160">
+        <div class="sidebar-name">
+          <p class="site-title"><a href="index.html">Yasutomo Kawanishi</a></p>
+          <p class="sidebar-role">Professor, Ritsumeikan University<br>Team Director, RIKEN</p>
+        </div>
+        <button type="button" class="menu-button" aria-expanded="false" aria-controls="sidebar-panel">
+          <svg class="icon-open" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+          <svg class="icon-close" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+          <span>Menu</span>
+        </button>
+      </div>
 
-        <!-- Logo -->
-        <h1><a href="index.html" id="logo">Yasutomo KAWANISHI</a></h1>
-
-        <!-- Nav -->
-        <nav id="nav">
-          <ul>
+      <div class="sidebar-panel" id="sidebar-panel">
+        <nav aria-label="Main menu">
+          <ul class="nav-list">
             <li><a href="index.html">Home</a></li>
             <li><a href="profile.html">Profile</a></li>
-            <li class="current"><a href="research.html">Research</a></li>
+            <li><a href="research.html" aria-current="page">Research</a></li>
             <li><a href="publications.html">Publications</a></li>
             <li><a href="datasets.html">Datasets</a></li>
-            <li>&nbsp;</li>
-            <li>&nbsp;</li>
-            <li><a href="#">[Language]</a>
-              <ul>
-                <li><a href="https://yasutomo57jp.github.io/research.html">Japanese &#x1f1ef;&#x1f1f5;</a></li>
-                <li><a href="https://yasutomo57jp.github.io/en/research.html">English &#x1f1fa;&#x1f1f8;</a></li>
-              </ul>
-            </li>
           </ul>
         </nav>
 
-      </div>
-
-      <!-- Main -->
-      <section class="wrapper style1">
-        <div class="container">
-          <div id="content">
-
-            <!-- Content -->
-
-            <article class="research-card">
-              <div class="research-image">
-                <a href="#openworld"><img src="https://yasutomo57jp.github.io/images/openset-sgg_en.png" alt="" /></a>
-              </div>
-              <div class="research-content">
-                <h3>Scene Understanding including Unknown Objects/Events</h3>
-                <h4>Summary</h4>
-                <p>When we humans see an unknown object, we can recognize it as some kind of object even if we don't know what it is, but robots can only detect objects that their object detectors have learned about and cannot estimate the relationship with other objects. We are researching the topic, Open-set recognition, which enables robot for detecting unknown objects, and Open-vocabulary recognition, which enables robot for detecting objects specified with new words. Not only unknown "Object", but we are also working on recognizing unknown action/event. (This work was/is supported in part by the MEXT (Ministry of Education, Culture, Sports, Science and Technology, JAPAN) through Grant-in-Aid for Scientific Research under Grant JP21H03519 and JP24H00733.)</p>
-                <h4>Publications</h4>
-                <ul>
-                  <li>M. Sonogashira et al., Relationship-Aware Unknown Object Detection for Open-Set Scene Graph Generation, IEEE Access, 2024.</li>
-                  <li>T. T. Nguyen et al., One-stage open-vocabulary temporal action detection leveraging temporal multi-scale and action label features, FG2024.</li>
-                  <li>T. T. Nguyen et al., Zero-Shot Pill-Prescription Matching With Graph Convolutional Network and Contrastive Learning, IEEE Access, 2024.</li>
-                  <li>M. Sonogashira & Y. Kawanishi, Towards Open-Set Scene Graph Generation with Unknown Objects, IEEE Access, 2022.</li>
-                </ul>
-              </div>
-            </article>
-
-            <article class="research-card">
-              <div class="research-image">
-                <a href="#scenegraph"><img src="https://yasutomo57jp.github.io/images/openset-sgg_en.png" alt="" /></a>
-              </div>
-              <div class="research-content">
-                <h3>Scene Understanding including Unknown Objects/Events</h3>
-                <h4>Summary</h4>
-                <p>In order to achieve a higher level of scene understanding, we are focusing on the task of scene graph generation, which involves not only detecting objects but also estimating and describing the relationships between them. Additionally, we are applying this approach to various applications on summarizing the contents of multiple images and generating captions. (This work was/is supported in part by the MEXT (Ministry of Education, Culture, Sports, Science and Technology, JAPAN) through Grant-in-Aid for Scientific Research under Grant JP21H03519.)</p>
-                <h4>Publications</h4>
-                <ul>
-                  <li>I. Phueaksri et al., Toward Visual Storytelling using Scene-Graph Contexts, MIRU2024, 2024.</li>
-                  <li>I. Phueaksri et al., Image-Collection Summarization using Scene-Graph Generation with External Knowledge, IEEE Access, 2024.</li>
-                  <li>I. Phueaksri et al., An Approach to Generate a Caption for an Image Collection using Scene Graph Generation, IEEE Access, 2023.</li>
-                </ul>
-              </div>
-            </article>
-
-            <article class="research-card">
-              <div class="research-image">
-                <a href="#multimodal"><img src="https://yasutomo57jp.github.io/images/multimodal_en.jpg" alt="" /></a>
-              </div>
-              <div class="research-content">
-                <h3>Multimodal Recognition Framework</h3>
-                <h4>Summary</h4>
-                <p>We humans use our eyes and ears to obtain information from surroundings. We are working on multimodal recognition framework, which recognizes things based on multiple modalities. In particular, we are working on the missing modality problem where some of the modalities are not available.</p>
-                <h4>Publications</h4>
-                <ul>
-                  <li>V. John and Y. Kawanishi, Progressive Learning of a Multimodal Classifier Accounting for Different Modality Combinationsi, Sensors, 2023.</li>
-                  <li>V. John and Y. Kawanishi, A Multimodal Sensor Fusion Framework Robust to Missing Modalities for Person Recognition, arxiv:2210.10972, 2022.</li>
-                  <li>V. John and Y. Kawanishi, Combining Knowledge Distillation and Transfer Learning for Sensor Fusion in Visible and Thermal Camera-based Person Classification, MVA2023.</li>
-                  <li>V. John and Y. Kawanishi, Multimodal Cascaded Framework with Metric Learning Robust to Missing Modalities for Person Classification, ACM MMSys', 2023.</li>
-                  <li>V. John and Y. Kawanishi, Audio-Visual Sensor Fusion Framework using Person Attributes Robust to Missing Visual Modality for Person Recognition, MMM2023.</li>
-                  <li>V. John and Y. Kawanishi, A Multimodal Sensor Fusion Framework Robust to Missing Modalities for Person Recognition, ACM MM Asia 2022.</li>
-                  <li>V. John and Y. Kawanishi, Audio and Video-Based Emotion Recognition Using Multimodal Transformers, ICPR2022.</li>
-                </ul>
-              </div>
-            </article>
-
-            <article class="research-card">
-              <div class="research-image">
-                <a href="#lfir"><img src="https://yasutomo57jp.github.io/images/lfir.png" alt="" /></a>
-              </div>
-              <div class="research-content">
-                <h3>Human Recognition using a Low-resolution FIR Sensor</h3>
-                <h4>Summary</h4>
-                <p>To watch over the elderly, we need sensing that can be recognized even at night, with privacy in mind. What we are focusing on is extremely low-resolution far-infrared images. Since they are extremely low-resolution, privacy is not an issue, and since they capture far-infrared light, we can use them for nighttime sensing. We are researching human tracking, gesture recognition, behavior recognition, and pose estimation using these images.</p>
-                <h4>Publications</h4>
-                <ul>
-                  <li>S. Iwata et al., LFIR2Pose: Pose Estimation from an Extremely Low-Resolution FIR Image Sequence, ICPR2020.</li>
-                  <li>Y. Kawanishi et al., Voting-based Hand-Waving Gesture Spotting from a Low-Resolution Far-Infrared Image Sequence, VCIP2018.</li>
-                  <li>T. Kawashima et al., Action Recognition from Extremely Low-Resolution Thermal Image Sequence, AVSS2017.</li>
-                </ul>
-              </div>
-            </article>
-
-            <article class="research-card">
-              <div class="research-image">
-                <a href="#objpose"><img src="https://yasutomo57jp.github.io/images/objpose.png" alt="" /></a>
-              </div>
-              <div class="research-content">
-                <h3>Object Pose Estimation from Depth Images</h3>
-                <h4>Summary</h4>
-                <p>When a robot grasps or manipulates an object, it needs to recognize the object's pose correctly. Recently, depth image sensors have been installed in many robots. Therefore, we are working on object pose estimation using depth images.</p>
-                <h4>Publications</h4>
-                <ul>
-                  <li>H. Tatemichi et al., Category-level Object Pose Estimation in Heavily Cluttered Scenes by Generalized Two-stage Shape Reconstructor, IEEE Access, 2024.</li>
-                  <li>N. M. Z. Hashim et al., Best Next-Viewpoint Recommendation by Selecting Minimum Pose Ambiguity for Category-level Object Pose Estimation, JSPE, 2021.</li>
-                  <li>H. Tatemichi et al., Median-Shape Representation Learning for Category-Level Object Pose Estimation in Cluttered Environments, ICPR2020.</li>
-                  <li>H. Ninomiya et al., Deep Manifold Embedding for 3D Object Pose Estimation, VISAPP2017.</li>
-                </ul>
-              </div>
-            </article>
-
-            <article class="research-card">
-              <div class="research-image">
-                <a href="#gaze"><img src="https://yasutomo57jp.github.io/images/gaze.png" alt="" /></a>
-              </div>
-              <div class="research-content">
-                <h3>Gaze Analysis of a Crowd of People</h3>
-                <h4>Summary</h4>
-                <p>Knowing what a large number of people are paying attention to is useful for estimating the interests of people watching sports or attending a live music event. Therefore, from a video observing many people simultaneously, we are working on a research project to estimate the target most people in a video are paying attention to.</p>
-                <h4>Publications</h4>
-                <ul>
-                  <li>Y. Kodama et al., Localizing the Gaze Target of a Crowd of People, ACCV2018 Workshop.</li>
-                </ul>
-              </div>
-            </article>
-
-            <article class="research-card">
-              <div class="research-image">
-                <a href="#posesequence"><img src="https://yasutomo57jp.github.io/images/posesequence.png" alt="" /></a>
-              </div>
-              <div class="research-content">
-                <h3>Action Recognition from a Human Skeleton Sequence</h3>
-                <h4>Summary</h4>
-                <p>By focusing on how a person's skeleton changes, we can estimate what the person is doing and what state the person is in. Recently, technologies that can accurately estimate a person's skeleton from images have become available, and we are working on applying the estimated skeleton to various recognition and prediction tasks.</p>
-                <h4>Publications</h4>
-                <ul>
-                  <li>M. Mizuno et al., Subjective Baggage-Weight Estimation based on Human Walking Behavior, IEEE Access, 2024.</li>
-                  <li>M. Mizuno et al., Subjective Baggage-Weight Estimation from Gait ---Can you estimate how heavy the person feels?---, VISAPP2023.</li>
-                  <li>T. Fujita, Future Pose Prediction from 3D Human Skeleton Sequence with Surrounding Situation, Sensors, 2023.</li>
-                  <li>T. Fujita et al., Human Pose Prediction by Progressive Generation in Multi-scale Frequency Domain, MVA2023.</li>
-                  <li>T. Fujita et al., Toward Surroundings-aware Temporal Prediction of 3D Human Skeleton Sequence, ICPR2022 Workshop (T-CAP).</li>
-                  <li>N. Nishida et al., SOANets: Encoder-Decoder based Skeleton Orientation Alignment Network for White Cane User Recognition from 2D Human Skeleton Sequence, VISAPP2020.</li>
-                  <li>O. Temuroglu et al, Occlusion-Aware Skeleton Trajectory Representation for Abnormal Behavior Detection, IW-FCV2020.</li>
-                </ul>
-              </div>
-            </article>
-
-            <article class="research-card">
-              <div class="research-image">
-                <a href="#mtmct"><img src="https://yasutomo57jp.github.io/images/mtmct.png" alt="" /></a>
-              </div>
-              <div class="research-content">
-                <h3>People Tracking</h3>
-                <h4>Summary</h4>
-                <p>In techniques such as people flow analysis and lost child search, it is important to know the trajectories of people walking around a large area. We are working on tracking and re-identifying people within/across camera views in order to know which person went where by passing which paths, in a situation where a large area is being observed by multiple cameras.</p>
-                <h4>Publications</h4>
-                <ul>
-                  <li>Y. Kawanishi, Label-Based Multiple Object Ensemble Tracking with Randomized Frame Dropping, ICPR2022.</li>
-                  <li>Y. Kawanishi et al., Trajectory Ensemble: Multiple Persons Consensus Tracking across Non-overlapping Multiple Cameras over Randomly Dropped Camera Networks, CVPR2017 Workshop.</li>
-                </ul>
-              </div>
-            </article>
-
-            <article class="research-card">
-              <div class="research-image">
-                <a href="#otherfields"><img src="https://yasutomo57jp.github.io/images/otherfields.png" alt="" /></a>
-              </div>
-              <div class="research-content">
-                <h3>Image Recognition Applications to Other Research Fields</h3>
-                <h4>Summary</h4>
-                <p>Image recognition techniques are expected to be used in various fields such as life science. We are also working on the application of image recognition technology in the fields of astronomy and archaeology. (Detection of star forming region in Astronomy field, Automatic origin identification of earthenware in Archaeology field.)</p>
-                <h4>Publications</h4>
-                <ul>
-                  <li>Y. Kawae, et al., 3D Survey of the Menkaure Pyramid, Virtual Annual Meeting, American Research Center in Egypt, 2024.</li>
-                  <li>Y. Shimajiri et al., Predicting reliable H2 column density maps from molecular line data using machine learning, MNRAS, 2023.</li>
-                  <li>S. Fujita et al., Distance determination of molecular clouds in the first quadrant of the Galactic plane using deep learning, Protostars and Planets VII, 2023.</li>
-                  <li>S. Fujita et al., Distance determination of molecular clouds in the first quadrant of the Galactic plane using deep learning: I. Method and results, ASJ, 2023.</li>
-                  <li>S. Nishimoto et al., Development of a high-speed identification model for infrared-ring structures using deep learningi, SPIE Astronomical Telescopes + Instrumentation 2022.</li>
-                  <li>S. Ueda et al., Identification of infrared-ring structures by convolutional neural network, SPIE Astronomical Telescopes + Instrumentation 2020</li>
-                </ul>
-              </div>
-            </article>
-
+        <div class="sidebar-sub">
+          <p class="sidebar-sub-label" id="lang-label">Language</p>
+          <div class="lang-switch" role="group" aria-labelledby="lang-label">
+            <a href="../research.html" lang="ja" hreflang="ja">日本語</a>
+            <span aria-current="true">English</span>
           </div>
         </div>
-      </section>
 
-      <!-- Footer -->
-      <div id="footer">
-
-        <!-- Icons -->
-        <ul class="icons">
-          <li><a href="https://twitter.com/yasutomo57jp" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-          <li><a href="https://www.facebook.com/yasutomo57jp" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-          <li><a href="https://github.com/yasutomo57jp" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-          <li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-          <li><a href="#" class="icon brands fa-google-plus-g"><span class="label">Google+</span></a></li>
-        </ul>
-
-        <!-- Copyright -->
-        <div class="copyright">
-          <ul class="menu">
-            <li>&copy; Yasutomo KAWANISHI. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+        <div class="sidebar-sub">
+          <p class="sidebar-sub-label" id="social-label">SNS</p>
+          <ul class="social" aria-labelledby="social-label">
+            <li><a href="https://x.com/yasutomo57jp" aria-label="X (formerly Twitter)">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.8 3h3.1l-6.8 7.7L22 21h-6.2l-4.9-6.3L5.3 21H2.2l7.2-8.3L1.8 3h6.4l4.4 5.8L17.8 3zm-1.1 16.2h1.7L7.4 4.7H5.5l11.2 14.5z"/></svg>
+            </a></li>
+            <li><a href="https://www.facebook.com/yasutomo57jp" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 21v-7.6h2.6l.4-3h-3V8.5c0-.9.3-1.5 1.5-1.5h1.6V4.3c-.3 0-1.2-.1-2.3-.1-2.3 0-3.9 1.4-3.9 4v2.2H7.8v3h2.6V21h3.1z"/></svg>
+            </a></li>
+            <li><a href="https://github.com/yasutomo57jp" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.6.3-1.1.6-1.3-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.7 0 0 .8-.3 2.7 1a9.4 9.4 0 0 1 5 0c1.9-1.3 2.7-1 2.7-1 .5 1.4.2 2.4.1 2.7.6.7 1 1.6 1 2.7 0 3.9-2.3 4.7-4.6 5 .4.3.7.9.7 1.9v2.8c0 .3.2.6.7.5A10 10 0 0 0 12 2z"/></svg>
+            </a></li>
           </ul>
-              </div>
-            </article>
+        </div>
+      </div>
+    </header>
 
+    <div class="content">
+      <main class="main main-wide" id="main" tabindex="-1">
+        <div class="page-intro">
+          <h1 class="page-title">Research</h1>
+        </div>
+
+        <section class="section" aria-labelledby="h-topics">
+          <h2 class="section-title" id="h-topics">Research topics</h2>
+          <ul class="index-links">
+            <li><a href="#openworld"><span class="index-num" aria-hidden="true">01</span><span>Scene Understanding including Unknown Objects/Events</span></a></li>
+            <li><a href="#scenegraph"><span class="index-num" aria-hidden="true">02</span><span>Scene Graph Generation from Images and Its Applications</span></a></li>
+            <li><a href="#multimodal"><span class="index-num" aria-hidden="true">03</span><span>Multimodal Recognition Framework</span></a></li>
+            <li><a href="#lfir"><span class="index-num" aria-hidden="true">04</span><span>Human Recognition using a Low-resolution FIR Sensor</span></a></li>
+            <li><a href="#objpose"><span class="index-num" aria-hidden="true">05</span><span>Object Pose Estimation from Depth Images</span></a></li>
+            <li><a href="#gaze"><span class="index-num" aria-hidden="true">06</span><span>Gaze Analysis of a Crowd of People</span></a></li>
+            <li><a href="#posesequence"><span class="index-num" aria-hidden="true">07</span><span>Action Recognition from a Human Skeleton Sequence</span></a></li>
+            <li><a href="#mtmct"><span class="index-num" aria-hidden="true">08</span><span>People Tracking</span></a></li>
+            <li><a href="#otherfields"><span class="index-num" aria-hidden="true">09</span><span>Image Recognition Applications to Other Research Fields</span></a></li>
+          </ul>
+        </section>
+
+        <section class="section" aria-labelledby="h-topic-list">
+          <h2 class="visually-hidden" id="h-topic-list">Research topic details</h2>
+          <div class="topics">
+          <article class="topic research-card" aria-labelledby="openworld">
+            <figure class="topic-figure">
+              <img src="../images/openset-sgg_en.png" alt="Scene Understanding including Unknown Objects/Events" loading="lazy">
+            </figure>
+            <div class="research-content">
+              <p class="topic-label" aria-hidden="true">TOPIC 01</p>
+              <h3 id="openworld">Scene Understanding including Unknown Objects/Events</h3>
+              <h4 class="sub-title">Summary</h4>
+              <p>When we humans see an unknown object, we can recognize it as some kind of object even if we don't know what it is, but robots can only detect objects that their object detectors have learned about and cannot estimate the relationship with other objects. We are researching the topic, Open-set recognition, which enables robot for detecting unknown objects, and Open-vocabulary recognition, which enables robot for detecting objects specified with new words. Not only unknown "Object", but we are also working on recognizing unknown action/event. (This work was/is supported in part by the MEXT (Ministry of Education, Culture, Sports, Science and Technology, JAPAN) through Grant-in-Aid for Scientific Research under Grant JP21H03519 and JP24H00733.)</p>
+              <h4 class="sub-title">Publications</h4>
+              <ul class="dot-list">
+                <li>M. Sonogashira et al., Relationship-Aware Unknown Object Detection for Open-Set Scene Graph Generation, IEEE Access, 2024.</li>
+                <li>T. T. Nguyen et al., One-stage open-vocabulary temporal action detection leveraging temporal multi-scale and action label features, FG2024.</li>
+                <li>T. T. Nguyen et al., Zero-Shot Pill-Prescription Matching With Graph Convolutional Network and Contrastive Learning, IEEE Access, 2024.</li>
+                <li>M. Sonogashira &amp; Y. Kawanishi, Towards Open-Set Scene Graph Generation with Unknown Objects, IEEE Access, 2022.</li>
+              </ul>
+              <p class="back-top"><a href="#h-topics">Back to list</a></p>
+            </div>
+          </article>
+          <article class="topic research-card" aria-labelledby="scenegraph">
+            <figure class="topic-figure">
+              <img src="../images/openset-sgg_en.png" alt="Scene Graph Generation from Images and Its Applications" loading="lazy">
+            </figure>
+            <div class="research-content">
+              <p class="topic-label" aria-hidden="true">TOPIC 02</p>
+              <h3 id="scenegraph">Scene Graph Generation from Images and Its Applications</h3>
+              <h4 class="sub-title">Summary</h4>
+              <p>In order to achieve a higher level of scene understanding, we are focusing on the task of scene graph generation, which involves not only detecting objects but also estimating and describing the relationships between them. Additionally, we are applying this approach to various applications on summarizing the contents of multiple images and generating captions. (This work was/is supported in part by the MEXT (Ministry of Education, Culture, Sports, Science and Technology, JAPAN) through Grant-in-Aid for Scientific Research under Grant JP21H03519.)</p>
+              <h4 class="sub-title">Publications</h4>
+              <ul class="dot-list">
+                <li>I. Phueaksri et al., Toward Visual Storytelling using Scene-Graph Contexts, MIRU2024, 2024.</li>
+                <li>I. Phueaksri et al., Image-Collection Summarization using Scene-Graph Generation with External Knowledge, IEEE Access, 2024.</li>
+                <li>I. Phueaksri et al., An Approach to Generate a Caption for an Image Collection using Scene Graph Generation, IEEE Access, 2023.</li>
+              </ul>
+              <p class="back-top"><a href="#h-topics">Back to list</a></p>
+            </div>
+          </article>
+          <article class="topic research-card" aria-labelledby="multimodal">
+            <figure class="topic-figure">
+              <img src="../images/multimodal_en.jpg" alt="Multimodal Recognition Framework" loading="lazy">
+            </figure>
+            <div class="research-content">
+              <p class="topic-label" aria-hidden="true">TOPIC 03</p>
+              <h3 id="multimodal">Multimodal Recognition Framework</h3>
+              <h4 class="sub-title">Summary</h4>
+              <p>We humans use our eyes and ears to obtain information from surroundings. We are working on multimodal recognition framework, which recognizes things based on multiple modalities. In particular, we are working on the missing modality problem where some of the modalities are not available.</p>
+              <h4 class="sub-title">Publications</h4>
+              <ul class="dot-list">
+                <li>V. John and Y. Kawanishi, Progressive Learning of a Multimodal Classifier Accounting for Different Modality Combinationsi, Sensors, 2023.</li>
+                <li>V. John and Y. Kawanishi, A Multimodal Sensor Fusion Framework Robust to Missing Modalities for Person Recognition, arxiv:2210.10972, 2022.</li>
+                <li>V. John and Y. Kawanishi, Combining Knowledge Distillation and Transfer Learning for Sensor Fusion in Visible and Thermal Camera-based Person Classification, MVA2023.</li>
+                <li>V. John and Y. Kawanishi, Multimodal Cascaded Framework with Metric Learning Robust to Missing Modalities for Person Classification, ACM MMSys', 2023.</li>
+                <li>V. John and Y. Kawanishi, Audio-Visual Sensor Fusion Framework using Person Attributes Robust to Missing Visual Modality for Person Recognition, MMM2023.</li>
+                <li>V. John and Y. Kawanishi, A Multimodal Sensor Fusion Framework Robust to Missing Modalities for Person Recognition, ACM MM Asia 2022.</li>
+                <li>V. John and Y. Kawanishi, Audio and Video-Based Emotion Recognition Using Multimodal Transformers, ICPR2022.</li>
+              </ul>
+              <p class="back-top"><a href="#h-topics">Back to list</a></p>
+            </div>
+          </article>
+          <article class="topic research-card" aria-labelledby="lfir">
+            <figure class="topic-figure">
+              <img src="../images/lfir.png" alt="Human Recognition using a Low-resolution FIR Sensor" loading="lazy">
+            </figure>
+            <div class="research-content">
+              <p class="topic-label" aria-hidden="true">TOPIC 04</p>
+              <h3 id="lfir">Human Recognition using a Low-resolution FIR Sensor</h3>
+              <h4 class="sub-title">Summary</h4>
+              <p>To watch over the elderly, we need sensing that can be recognized even at night, with privacy in mind. What we are focusing on is extremely low-resolution far-infrared images. Since they are extremely low-resolution, privacy is not an issue, and since they capture far-infrared light, we can use them for nighttime sensing. We are researching human tracking, gesture recognition, behavior recognition, and pose estimation using these images.</p>
+              <h4 class="sub-title">Publications</h4>
+              <ul class="dot-list">
+                <li>S. Iwata et al., LFIR2Pose: Pose Estimation from an Extremely Low-Resolution FIR Image Sequence, ICPR2020.</li>
+                <li>Y. Kawanishi et al., Voting-based Hand-Waving Gesture Spotting from a Low-Resolution Far-Infrared Image Sequence, VCIP2018.</li>
+                <li>T. Kawashima et al., Action Recognition from Extremely Low-Resolution Thermal Image Sequence, AVSS2017.</li>
+              </ul>
+              <p class="back-top"><a href="#h-topics">Back to list</a></p>
+            </div>
+          </article>
+          <article class="topic research-card" aria-labelledby="objpose">
+            <figure class="topic-figure">
+              <img src="../images/objpose.png" alt="Object Pose Estimation from Depth Images" loading="lazy">
+            </figure>
+            <div class="research-content">
+              <p class="topic-label" aria-hidden="true">TOPIC 05</p>
+              <h3 id="objpose">Object Pose Estimation from Depth Images</h3>
+              <h4 class="sub-title">Summary</h4>
+              <p>When a robot grasps or manipulates an object, it needs to recognize the object's pose correctly. Recently, depth image sensors have been installed in many robots. Therefore, we are working on object pose estimation using depth images.</p>
+              <h4 class="sub-title">Publications</h4>
+              <ul class="dot-list">
+                <li>H. Tatemichi et al., Category-level Object Pose Estimation in Heavily Cluttered Scenes by Generalized Two-stage Shape Reconstructor, IEEE Access, 2024.</li>
+                <li>N. M. Z. Hashim et al., Best Next-Viewpoint Recommendation by Selecting Minimum Pose Ambiguity for Category-level Object Pose Estimation, JSPE, 2021.</li>
+                <li>H. Tatemichi et al., Median-Shape Representation Learning for Category-Level Object Pose Estimation in Cluttered Environments, ICPR2020.</li>
+                <li>H. Ninomiya et al., Deep Manifold Embedding for 3D Object Pose Estimation, VISAPP2017.</li>
+              </ul>
+              <p class="back-top"><a href="#h-topics">Back to list</a></p>
+            </div>
+          </article>
+          <article class="topic research-card" aria-labelledby="gaze">
+            <figure class="topic-figure">
+              <img src="../images/gaze.png" alt="Gaze Analysis of a Crowd of People" loading="lazy">
+            </figure>
+            <div class="research-content">
+              <p class="topic-label" aria-hidden="true">TOPIC 06</p>
+              <h3 id="gaze">Gaze Analysis of a Crowd of People</h3>
+              <h4 class="sub-title">Summary</h4>
+              <p>Knowing what a large number of people are paying attention to is useful for estimating the interests of people watching sports or attending a live music event. Therefore, from a video observing many people simultaneously, we are working on a research project to estimate the target most people in a video are paying attention to.</p>
+              <h4 class="sub-title">Publications</h4>
+              <ul class="dot-list">
+                <li>Y. Kodama et al., Localizing the Gaze Target of a Crowd of People, ACCV2018 Workshop.</li>
+              </ul>
+              <p class="back-top"><a href="#h-topics">Back to list</a></p>
+            </div>
+          </article>
+          <article class="topic research-card" aria-labelledby="posesequence">
+            <figure class="topic-figure">
+              <img src="../images/posesequence.png" alt="Action Recognition from a Human Skeleton Sequence" loading="lazy">
+            </figure>
+            <div class="research-content">
+              <p class="topic-label" aria-hidden="true">TOPIC 07</p>
+              <h3 id="posesequence">Action Recognition from a Human Skeleton Sequence</h3>
+              <h4 class="sub-title">Summary</h4>
+              <p>By focusing on how a person's skeleton changes, we can estimate what the person is doing and what state the person is in. Recently, technologies that can accurately estimate a person's skeleton from images have become available, and we are working on applying the estimated skeleton to various recognition and prediction tasks.</p>
+              <h4 class="sub-title">Publications</h4>
+              <ul class="dot-list">
+                <li>M. Mizuno et al., Subjective Baggage-Weight Estimation based on Human Walking Behavior, IEEE Access, 2024.</li>
+                <li>M. Mizuno et al., Subjective Baggage-Weight Estimation from Gait ---Can you estimate how heavy the person feels?---, VISAPP2023.</li>
+                <li>T. Fujita, Future Pose Prediction from 3D Human Skeleton Sequence with Surrounding Situation, Sensors, 2023.</li>
+                <li>T. Fujita et al., Human Pose Prediction by Progressive Generation in Multi-scale Frequency Domain, MVA2023.</li>
+                <li>T. Fujita et al., Toward Surroundings-aware Temporal Prediction of 3D Human Skeleton Sequence, ICPR2022 Workshop (T-CAP).</li>
+                <li>N. Nishida et al., SOANets: Encoder-Decoder based Skeleton Orientation Alignment Network for White Cane User Recognition from 2D Human Skeleton Sequence, VISAPP2020.</li>
+                <li>O. Temuroglu et al, Occlusion-Aware Skeleton Trajectory Representation for Abnormal Behavior Detection, IW-FCV2020.</li>
+              </ul>
+              <p class="back-top"><a href="#h-topics">Back to list</a></p>
+            </div>
+          </article>
+          <article class="topic research-card" aria-labelledby="mtmct">
+            <figure class="topic-figure">
+              <img src="../images/mtmct.png" alt="People Tracking" loading="lazy">
+            </figure>
+            <div class="research-content">
+              <p class="topic-label" aria-hidden="true">TOPIC 08</p>
+              <h3 id="mtmct">People Tracking</h3>
+              <h4 class="sub-title">Summary</h4>
+              <p>In techniques such as people flow analysis and lost child search, it is important to know the trajectories of people walking around a large area. We are working on tracking and re-identifying people within/across camera views in order to know which person went where by passing which paths, in a situation where a large area is being observed by multiple cameras.</p>
+              <h4 class="sub-title">Publications</h4>
+              <ul class="dot-list">
+                <li>Y. Kawanishi, Label-Based Multiple Object Ensemble Tracking with Randomized Frame Dropping, ICPR2022.</li>
+                <li>Y. Kawanishi et al., Trajectory Ensemble: Multiple Persons Consensus Tracking across Non-overlapping Multiple Cameras over Randomly Dropped Camera Networks, CVPR2017 Workshop.</li>
+              </ul>
+              <p class="back-top"><a href="#h-topics">Back to list</a></p>
+            </div>
+          </article>
+          <article class="topic research-card" aria-labelledby="otherfields">
+            <figure class="topic-figure">
+              <img src="../images/otherfields.png" alt="Image Recognition Applications to Other Research Fields" loading="lazy">
+            </figure>
+            <div class="research-content">
+              <p class="topic-label" aria-hidden="true">TOPIC 09</p>
+              <h3 id="otherfields">Image Recognition Applications to Other Research Fields</h3>
+              <h4 class="sub-title">Summary</h4>
+              <p>Image recognition techniques are expected to be used in various fields such as life science. We are also working on the application of image recognition technology in the fields of astronomy and archaeology. (Detection of star forming region in Astronomy field, Automatic origin identification of earthenware in Archaeology field.)</p>
+              <h4 class="sub-title">Publications</h4>
+              <ul class="dot-list">
+                <li>Y. Kawae, et al., 3D Survey of the Menkaure Pyramid, Virtual Annual Meeting, American Research Center in Egypt, 2024.</li>
+                <li>Y. Shimajiri et al., Predicting reliable H2 column density maps from molecular line data using machine learning, MNRAS, 2023.</li>
+                <li>S. Fujita et al., Distance determination of molecular clouds in the first quadrant of the Galactic plane using deep learning, Protostars and Planets VII, 2023.</li>
+                <li>S. Fujita et al., Distance determination of molecular clouds in the first quadrant of the Galactic plane using deep learning: I. Method and results, ASJ, 2023.</li>
+                <li>S. Nishimoto et al., Development of a high-speed identification model for infrared-ring structures using deep learningi, SPIE Astronomical Telescopes + Instrumentation 2022.</li>
+                <li>S. Ueda et al., Identification of infrared-ring structures by convolutional neural network, SPIE Astronomical Telescopes + Instrumentation 2020</li>
+              </ul>
+              <p class="back-top"><a href="#h-topics">Back to list</a></p>
+            </div>
+          </article>
+          </div>
+        </section>
+
+        <footer class="footer">
+          <p>&copy; Yasutomo KAWANISHI. All rights reserved</p>
+        </footer>
+      </main>
     </div>
+  </div>
 
-    <!-- Scripts -->
-    <script src="https://yasutomo57jp.github.io/assets/js/jquery.min.js"></script>
-    <script src="https://yasutomo57jp.github.io/assets/js/jquery.dropotron.min.js"></script>
-    <script src="https://yasutomo57jp.github.io/assets/js/browser.min.js"></script>
-    <script src="https://yasutomo57jp.github.io/assets/js/breakpoints.min.js"></script>
-    <script src="https://yasutomo57jp.github.io/assets/js/util.js"></script>
-    <script src="https://yasutomo57jp.github.io/assets/js/main.js"></script>
-
-  </body>
+</body>
 </html>
